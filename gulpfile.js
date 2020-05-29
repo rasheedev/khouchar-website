@@ -68,13 +68,6 @@ function watch() {
     gulp.watch('src/html/**/*.pug', html);
 }
 
-function dev() {
-    gulp.watch("src/css/**/*.scss", css);
-    gulp.watch('src/js/**/*.js', js);
-    gulp.watch('src/img/**/*', img);
-    gulp.watch('src/html/**/*.pug', html);
-}
-
 exports.html = html;
 exports.css = css;
 exports.js = js;
@@ -83,6 +76,3 @@ exports.watch = watch;
 
 var build = gulp.parallel(watch);
 gulp.task('default', build);
-
-var dev = gulp.parallel(dev);
-gulp.task('dev', dev);
