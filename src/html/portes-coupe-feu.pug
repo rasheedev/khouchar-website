@@ -1,0 +1,49 @@
+- var whatPage = "portes-coupe-feu";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/portes-coupe-feu.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Portes Coupe Feu
+                                    div(class="divider")
+                                p Khouchar propose une large gamme de portes coupe- feu qui répond aux différents besoins des clients.
+                                p Les portes coupe- feu sont la meilleure solution pour les séparations dans les expaces publics et les espaces très fréquentés comme les centres commerciaux et les bâtiments publics.
+                                p Les portes coupe- feu vous offrent un maximum de protection et de sécurité grâce à leur résistance au feu.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/portes-coupe-feu/pcf1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-coupe-feu/pcf2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-coupe-feu/pcf3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

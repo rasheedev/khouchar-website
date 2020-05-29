@@ -1,0 +1,50 @@
+- var whatPage = "portes-sectionnelles-residentielles";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/portes-sectionnelles-residentielles.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Portes Sectionnelles Residentielles
+                                    div(class="divider")
+                                p La porte sectionnelle Khouchar est esthétique, performante et idéale pour tout usage. Son mécanisme lui procure la faculté de ne pas occuper un espace latéral et supérieur. Ainsi, elle vous permet de bénéficier de toute l’ouverture de passage.
+                                p Khouchar fabrique ses portes sectionnelles à partir de matériaux de première qualité lui procurant ainsi une fiabilité inégalée et répondant à un souci de sécurité et une facilité d’utilisation.
+                                p Toutes les portes sectionnelles résidentielles sont fabriquées sur mesure et sont livrées dans des délais courts.
+                                p Vous avez la possibilité de personnaliser votre porte avec des hublots de différents formats, ce qui permet de laisser passer la lumière de manière naturelle et aussi d’apporter votre touche de décoration.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/portes-sectionnelles-residentielles/psr1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-sectionnelles-residentielles/psr2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-sectionnelles-residentielles/psr3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

@@ -1,0 +1,35 @@
+- var whatPage = "references";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // References Page
+        section(id="references-page" class="section")
+            div(class="container")
+                div(class="section-title")
+                    h2 Nos Références
+                    div(class="divider")
+                div(class="references-img")
+                    img(src="img/references.gif")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

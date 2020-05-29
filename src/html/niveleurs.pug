@@ -1,0 +1,48 @@
+- var whatPage = "niveleurs";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/quai-niveleurs.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Niveleurs de Quai
+                                    div(class="divider")
+                                p Leurs dimensions varient en fonction de l’utilisation et de l’environnement. Leur capacité de charges admissibles est comprise entre 6 et 12 tonnes en dynamique.
+                                p Khouchar propose des niveleurs de quais à lèvre rabattable pour les quais standards et des niveleurs de quais à lèvre télescopique pour les quais frigorifiques.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/quai-niveleurs/qn1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/quai-niveleurs/qn2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/quai-niveleurs/qn3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

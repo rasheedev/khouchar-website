@@ -1,0 +1,49 @@
+- var whatPage = "rideaux-metalliques-commerciaux";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/rideaux-metalliques-commerciaux.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Rideaux Métalliques Commerciaux
+                                    div(class="divider")
+                                p Conçus pour les magasins et centres commerciaux, les rideaux Khouchar sont la solution la plus esthétique. Les rideaux KHOUCHAR, réalisés à partir de matériaux de première qualité et étudiés de manière rigoureuse, sont facilement manipulables et durables, témoignant ainsi de leur grande qualité.
+                                p KHOUCHAR propose différents types de rideaux vous offrant ainsi un large choix afin de répondre au mieux aux multiples besoins et situations.
+                                p Depuis plus de 20 ans, KHOUCHAR met à votre service tout son savoir-faire pour créer du « sur mesure » pour embellir votre commerce en lui apportant une touche certaine de personnalité.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/rideaux-metalliques-commerciaux/rmc1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/rideaux-metalliques-commerciaux/rmc2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/rideaux-metalliques-commerciaux/rmc3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

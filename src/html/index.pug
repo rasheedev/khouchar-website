@@ -1,0 +1,205 @@
+- var whatPage = "index";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        //- Home Page
+        div(id="home-page")
+
+                // Hero Slider
+                section(id="home")
+                    div(class="owl-carousel" id="owl-home")
+                        div(class="bg-image" style="background-image: url(img/slider1.jpg);")
+                        div(class="bg-image" style="background-image: url(img/slider2.jpg);")
+                        div(class="bg-image" style="background-image: url(img/slider3.jpg);")
+
+
+                // Services
+                section(class="section" id="services")
+                    div(class="container")
+                        div(class="services-wrap")
+                            div(class="row")
+                                div(class="col-lg-4")
+                                    div(class="single-service")
+                                        img(src="img/services/bet.jpg" class="img-fluid")
+                                        h3 Bureau d'études
+                                        p Khouchar propose d’effectuer des études sur mesure selon votre besoin et s’engage, ainsi, à satisfaire ses clients en termes de conseil, de qualité de produit et de service, et ce dans le cadre du respect des normes et réglementations en vigueur.
+                                div(class="col-lg-4")
+                                    div(class="single-service")
+                                        img(src="img/services/ainstallation.jpg" class="img-fluid")
+                                        h3 Installation
+                                        p Khouchar est synonyme de portes et rideaux mais aussi, savoir- faire et qualité. Fabricant de différents types de fermetures à usage industriel, commercial et domestique, automatiques ou manuels.
+                                div(class="col-lg-4")
+                                    div(class="single-service")
+                                        img(src="img/services/accueil3-1.jpg" class="img-fluid")
+                                        h3 Service aprés-vente
+                                        p Afin d’honorer ses engagements, Khouchar améliore les processus et les procédures opérationnelles d’installation de ses produits et de service après vente en offrant toutes les ressources nécessaires.
+                
+
+                // Video
+                section(id="video")
+                    div(class="embed-responsive embed-responsive-16by9")
+                        iframe(class="embed-responsive-item" src="https://www.youtube.com/embed/RtlDoYY6xB0" allowfullscreen)
+                
+
+                // Products
+                section(class="section bg-image bg-overlay" id="products")
+                    div(class="container")
+                        div(class="products-wrap")
+                            div(class="row")
+                                div(class="col-lg-4")
+                                    div(class="single-product")
+                                        h3 
+                                            a(href="#") Portes Sectionnelles
+                                        p La porte sectionnelle Khouchar est esthétique, performante et idéale pour tout usage. Son mécanisme lui procure la faculté de ne pas occuper un espace latéral et supérieur.
+                                div(class="col-lg-4")
+                                    div(class="single-product")
+                                        h3 
+                                            a(href="#") Rideaux Métalliques
+                                        p Conçus pour les magasins et centres commerciaux, les rideaux Khouchar sont la solution de fermeture la plus esthétique. Les rideaux Khouchar sont réalisés à partir de matériaux de qualité.
+                                div(class="col-lg-4")
+                                    div(class="single-product")
+                                        h3 
+                                            a(href="#") Portails Coulissants
+                                        p Les portails coulissants Khouchar sont essentiellement préconisés pour les enceintes extérieures et les grandes ouvertures de bâtiments industriels.
+                                div(class="col-lg-4")
+                                    div(class="single-product")
+                                        h3  
+                                            a(href="#") Portails Battants
+                                        p Khouchar vous offre une gamme complète de portails battants de haute qualité produits sur mesure. L'habillage peut être en panneaux sandwich, en lames verticales ou en ossature .
+                                div(class="col-lg-4")
+                                    div(class="single-product")
+                                        h3 
+                                            a(href="#") Portes Laniéres
+                                        p Les portes souples à lanières Khouchar sont un moyen économique et simple pour éviter les courants d'air, les déperditions de froid et de chaleur dans différents types de locaux.
+                                div(class="col-lg-4")
+                                    div(class="single-product")
+                                        h3 
+                                            a(href="#") Portes Bascullantes
+                                        p La porte basculante Khouchar est légère et fonctionnelle. De part sa géométrie et son mécanisme, elle vous permet de garer vos véhicules en disposant de tout l'espace de votre garage.
+                                div(class="col-lg-4")
+                                    div(class="single-product")
+                                        h3 
+                                            a(href="#") Portes Rapides
+                                        p Les portes à effacement rapide Khouchar sont des portes préconisées pour des accès à passages fréquents, pour lieux réfrigérés ou chauffés ou encore tout simplement pour isoler deux espaces à air ambiant.
+                                div(class="col-lg-4")
+                                    div(class="single-product")
+                                        h3 
+                                            a(href="#") Equipements de Quai
+                                        p En partenariat avec le n°1 européen dans la conception et la fabrication d'équipements de quais ''STERTIL'', Khouchar étudie, prescrit et installe des solutions de chargement et déchargement adéquates.
+                                div(class="col-lg-4")
+                                    div(class="single-product")
+                                        h3 
+                                            a(href="#") EquPortes Coupe-Feu
+                                        p Khouchar propose une large gamme de portes coupe-feu qui répond aux différents besoins des clients. Elles sont la meilleure solution pour les espaces publics et les espaces très fréquentés.
+                
+
+                // Works
+                section(class="section" id="works")
+                    div(class="container")
+                        div(class="section-title")
+                            h2 Quelques Réalisations
+                            div(class="divider")
+                        div(class="works-wrap")
+                            div(class="row")
+                                div(class="col-lg-4")
+                                    div(class="single-work")
+                                        a(href="#")
+                                            div(class="work-img")
+                                                img(src="img/works/guillotine-vitree.jpg" class="img-fluid")
+                                            div(class="work-content")
+                                                h6(class="title") Guillotine Vitree
+                                                p Khouchar
+                                div(class="col-lg-4")
+                                    a(href="#")
+                                        div(class="single-work")
+                                            div(class="work-img")
+                                                img(src="img/works/portail-coulissant-1024x703.jpg" class="img-fluid")
+                                            div(class="work-content")
+                                                h6(class="title") Portail Coulissant
+                                                p Khouchar
+                                div(class="col-lg-4")
+                                    a(href="#")
+                                        div(class="single-work")
+                                            div(class="work-img")
+                                                img(src="img/works/rideau-industriel-768x527.jpg" class="img-fluid")
+                                            div(class="work-content")
+                                                h6(class="title") Porte Rapide Emadop
+                                                p Khouchar
+                                div(class="col-lg-4")
+                                    a(href="#")
+                                        div(class="single-work")
+                                            div(class="work-img")
+                                                img(src="img/works/porte-rapide-EMADOP-1024x703.jpg" class="img-fluid")
+                                            div(class="work-content")
+                                                h6(class="title") Rideau Industriel
+                                                p Khouchar
+                                div(class="col-lg-4")
+                                    a(href="#")
+                                        div(class="single-work")
+                                            div(class="work-img")
+                                                img(src="img/works/rideaux-a-biellettes-768x527.jpg" class="img-fluid")
+                                            div(class="work-content")
+                                                h6(class="title") Rideaux à Biellettes
+                                                p Khouchar
+                                div(class="col-lg-4")
+                                    a(href="#")
+                                        div(class="single-work")
+                                            div(class="work-img") 
+                                                img(src="img/works/equipements-de-quais-1024x703.jpg" class="img-fluid")
+                                            div(class="work-content")
+                                                h6(class="title") Equipements de Qauis
+                                                p Khouchar
+
+
+                // Clients
+                section(class="section bg-light" id="clients")
+                    div(class="container")
+                        div(class="section-title")
+                            h2 Parmi Nos Partenaires
+                            div(class="divider")
+                        div(class="clients-wrap")
+                            div(class="owl-carousel" id="owl-clients")
+                                div(class="single-client")
+                                    a(href="#")
+                                        img(src="img/clients/01.png" class="img-fluid")
+                                        span
+                                div(class="single-client")
+                                    a(href="#")
+                                        img(src="img/clients/02.png" class="img-fluid")
+                                        span
+                                div(class="single-client")
+                                    a(href="#")
+                                        img(src="img/clients/03.png" class="img-fluid")
+                                        span
+                                div(class="single-client")
+                                    a(href="#")
+                                        img(src="img/clients/04.png" class="img-fluid")
+                                        span
+                                div(class="single-client")
+                                    a(href="#")
+                                        img(src="img/clients/05.png" class="img-fluid")
+                                        span
+
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

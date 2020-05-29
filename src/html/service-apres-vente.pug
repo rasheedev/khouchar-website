@@ -1,0 +1,41 @@
+- var whatPage = "sav";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        // SAV Page
+        section(id="sav-page")
+            div(class="bg-image")
+            div(class="container")
+                div(class="sav-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="sav-content")
+                                div(class="section-title")
+                                    h2 Service Aprés-Vente
+                                    div(class="divider")
+                                p La société KHOUCHAR fait du service après-vente une priorité ; car il ne s’agit pas uniquement de produire une porte et de la vendre
+                                p KHOUCHAR contrôle la qualité de ses produits en amont lors de leur fabrication dans l’usine, ensuite, elle déploie la logistique nécessaire et adéquate pour votre chantier.
+                                p Son équipe, composée de professionnels des métiers de la fermeture résidentielle et industrielle, intervient dans les meilleurs délais pour la pose des portes.
+                                p Des formules de maintenance sont également disponibles afin que la durée de vie de votre porte soit optimisée. Son service de dépannage et de réparation prend le relais pour que la porte des soucis soit fermée à jamais.
+
+                        div(class="col-lg-6")
+                            div(class="sav-img")
+                                img(src="img/sav.jpg")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

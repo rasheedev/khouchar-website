@@ -1,0 +1,61 @@
+- var whatPage = "qsn";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="a-propos-page")
+            div(class="bg-image")
+            div(class="container")
+                div(class="a-propos-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="a-propos-content")
+                                div(class="section-title")
+                                    h2 Qui Sommes-Nous?
+                                    div(class="divider")
+                                p Khouchar, Du sur mesure pour vos fermetures.
+                                p Aujourd’hui, le nom KHOUCHAR est synonyme de portes et rideaux mais aussi, savoir-faire et qualité. En effet, fabricant de différents types de fermetures à usage industriel, commercial et domestique, automatiques ou manuels, KHOUCHAR étudie et réalise des solutions adéquates à vos projets. Sur son usine, KHOUCHAR, forte d’un capital humain qualifié, met en œuvre les techniques les plus modernes pour réaliser des produits de haute qualité répondant aux normes les plus sévères de fiabilité et de sécurité.
+                                div(class="section-title  pt-5")
+                                    h2 Engagement Qualité
+                                    div(class="divider")
+                                p Dans le cadre de la pérennisation de l’entreprise et la confirmation de sa place de leader sur le marché national, Khouchar a entrepris depuis 2010 une démarche qualité. Dans ce sens, Khouchar a mis en place un Système Management Qualité, conforme à la norme internationale ISO 9001 v2008, pour:
+                                ul(class="pl-4") 
+                                    li L’étude et la réalisation, la commercialisation, l’installation et le SAV des fermetures résidentielles, commerciales et industrielles.
+                                    li La commercialisation, l’installation et le SAV des automatismes, des équipements et des fournitures industrielles.
+                                
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-a-propos")
+                                div(class="single-a-propos")
+                                    img(src="img/a-propos/quisommesnous-745x559.jpg" class="img-fluid")
+                                div(class="single-a-propos")
+                                    img(src="img/a-propos/accueil2-745x559.jpg" class="img-fluid")
+                                div(class="single-a-propos")
+                                    img(src="img/a-propos/accueil1-745x559.jpg" class="img-fluid")
+                                div(class="single-a-propos")
+                                    img(src="img/a-propos/10-AT-MACHINES-745x559.jpg" class="img-fluid")
+                            div(class="download-catalog")
+                                a(href="catalogue/BROCHURE KHOUCHAR.pdf" class="btn btn-custom" target="_blank") Télécharger Catalogue
+
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

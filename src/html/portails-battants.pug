@@ -1,0 +1,48 @@
+- var whatPage = "portails-battants";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/portails-battants.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Portails Battants
+                                    div(class="divider")
+                                p Khouchar vous offre une gamme complète de portes battantes de haute qualité produite sur mesure. L’habillage peut être en panneaux sandwich, en lames verticales ou en ossature pour un habillage selon le choix du client.
+                                p Pour plus de tranquilité et moins d’effort, le portail battant peut être combiné avec un système d’automatisme télécommandé.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/portails-battants/pb1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portails-battants/pb2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portails-battants/pb3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

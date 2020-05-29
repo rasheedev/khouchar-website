@@ -1,0 +1,47 @@
+- var whatPage = "sas-etancheite";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/quai-sas.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Sas d'étanchiété
+                                    div(class="divider")
+                                p Le sas d’étanchéité augmente l’étanchéité et permet d’isoler en cas d’intempéries ou de chaleur.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/quai-sas/qs1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/quai-sas/qs2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/quai-sas/qs3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

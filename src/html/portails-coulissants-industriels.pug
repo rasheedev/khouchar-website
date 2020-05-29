@@ -1,0 +1,49 @@
+- var whatPage = "coulissants-industriels";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/portails-coulissants-industriels.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Portails Coulissants Industriels
+                                    div(class="divider")
+                                p Les portails coulissants Khouchar sont essentiellement préconisés pour les enceintes extérieures et les grandes ouvertures de bâtiments industriels.
+                                p Les portails coulissants Khouchar sont réalisés à partir d’une structure en profilés d’acier ayant fait l’objet d’une étude minutieuse afin d’optimiser leur fiabilité et leur durabilité. Aussi, Khouchar vous propose plusieurs habillages adaptés à vos besoins.
+                                p De présentation sobre, la gamme de portails coulissants Khouchar s’intègre à tous les types de clôtures. Elle offre un excellent rapport qualité/prix.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/coulissants-industriels/pci1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/coulissants-industriels/pci2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/coulissants-industriels/pci3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

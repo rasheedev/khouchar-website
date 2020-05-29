@@ -1,0 +1,145 @@
+/*-------------------------------------------------------*/
+/* General
+/*-------------------------------------------------------*/
+
+/* General tags */
+body {
+  font-family: $default-font;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: normal;
+  color: $text-color;
+  overflow-x: hidden;
+}
+:focus {
+  outline: none;
+}
+::-moz-selection {
+  background: $main-color;
+  color: #fff;
+}
+::-webkit-selection {
+  background: $main-color;
+  color: #fff;
+}
+::selection {
+  background: $main-color;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+  color: $heading-color;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a {
+    font-family: $heading-font;
+    color: $heading-color;
+    transition: all 0.5s;
+    &:hover,
+    &:active {
+        color: $main-color;
+    }
+  }
+}
+a {
+  color: $text-color;
+  text-decoration: none !important;
+  transition: all 0.5s;
+  outline: none;
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: $main-color;
+  }
+}
+p {
+  color: $text-color;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: normal;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+button {
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+/* General calsses */
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  background-color: #fff;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+  h2 {
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .divider {
+    display: block;
+    height: 1px;
+    width: 50px;
+    margin: 17px auto 15px;
+    background-color: $main-color;
+  }
+}
+.page-title {
+  padding: 60px 0;
+  background-color: #353d48;
+  .page-title-content{
+    h2 {
+      color: #fff;
+      margin: 0;
+    }
+  }
+}

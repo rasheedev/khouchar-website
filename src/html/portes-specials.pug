@@ -1,0 +1,48 @@
+- var whatPage = "portes-specials";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/portes-specials.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Portes Spécials
+                                    div(class="divider")
+                                p Khouchar propose des portes spécifiques à vos besoins.
+                                p Des portes guillotines vitrées pour villa aux portes souples de très grandes dimensions en passant par des portes de hangars d’avions, Khouchar propose des solutions SUR MESURE et des GRANDES DIMENSIONS sa spécialité.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/portes-speacials/ps1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-speacials/ps2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-speacials/ps3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

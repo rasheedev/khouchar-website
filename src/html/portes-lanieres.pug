@@ -1,0 +1,48 @@
+- var whatPage = "portes-lanieres";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/portes-lanieres.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Portes Laniéres
+                                    div(class="divider")
+                                p Les portes souples à lanières Khouchar sont un moyen économique et simple pour éviter les courants d’air, les déperditions de froid et de chaleur dans différents types de locaux. Elles peuvent résister à des températures comprises entre -50°C et +50°C.
+                                p Les portes souples à lanières Khouchar sont constituées de lanières en PVC de haute qualité fixées sur un support en inox. Ce système de fixation, répondant aux normes internationales relatives aux fermetures de baies libres, permet aux lanières un pivotement facile et une interchangeabilité remarquable.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/portes-lanieres/pl1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-lanieres/pl2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-lanieres/pl3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

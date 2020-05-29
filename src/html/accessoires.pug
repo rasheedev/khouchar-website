@@ -1,0 +1,52 @@
+- var whatPage = "accessoires";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/quai-accessoires.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Accessoires
+                                    div(class="divider")
+                                h6 Butoire de Qaui
+                                p Ils ont pour mission d’amortir le recul du camion et de protéger le niveleur et la baie de chargement.
+                                h6(class="mt-4")  Guides Roues
+                                p Ces accessoires permettent de centrer les camions lors de la mise à quai et d’éviter ainsi la détérioration des quais.
+                                h6(class="mt-4") Lévres de Quais
+                                p Ces accessoires permettent de centrer les camions lors de la mise à quai et d’éviter ainsi la détérioration des quais.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/quai-accessoires/qa1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/quai-accessoires/qa2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/quai-accessoires/qa3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug

@@ -1,0 +1,48 @@
+- var whatPage = "portes-rapides";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        // Qui Sommes-Nous Page
+        section(id="product-page")
+            div(class="bg-image" style="background-image: url('img/backgrounds/portes-rapides.jpg')")
+            div(class="container")
+                div(class="product-page-wrap")
+                    div(class="row")
+                        div(class="col-lg-6")
+                            div(class="product-content")
+                                div(class="section-title")
+                                    h2 Portes Rapides
+                                    div(class="divider")
+                                p Les portes à effacement rapide KHOUCHAR sont des portes préconisées pour des accès à passages fréquents, pour lieux réfrigérés ou chauffés ou encore tout simplement pour isoler deux espaces à air ambiant différent. Elles sont étudiées minutieusement pour répondre aux besoins des clients les plus exigeants, alliant ainsi fiabilité et entretien réduit.
+                                p Afin d’optimiser leur fonctionnement et leur durée de vie, ces portes sont réalisées à l’aide de matériaux de première qualité. Les portes à effacement rapide répondent aux normes de sécurité les plus élevées, relatives aux fermetures de bâtiments industriels. Leur vitesse d’ouverture peut varier de 0.5m/s à 1m/s suivant le besoin et les contraintes du client.
+                        div(class="col-lg-6")
+                            div(class="owl-carousel" id="owl-product")
+                                div(class="product-img")
+                                    img(src="img/products/portes-rapides/pr1.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-rapides/pr2.jpg" class="img-fluid")
+                                div(class="product-img")
+                                    img(src="img/products/portes-rapides/pr3.jpg" class="img-fluid")
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug
