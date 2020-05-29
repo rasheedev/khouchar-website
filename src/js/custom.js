@@ -13,12 +13,11 @@
     "use strict";
 
 
-    // Navigation Bar
-
+    // Responsive Navigation Bar
     function mobileMenu() {
-        if ($(window).width() < 800) {
+        if ($(window).width() < 850) {
           $(".mainmenu").addClass("mobilemenu");
-        } else if ($(window).width() >= 800) {
+        } else if ($(window).width() >= 850) {
             $(".mainmenu").removeClass("mobilemenu");
         }
     }
@@ -83,16 +82,17 @@
         }
     });
 
-
-    $(".mainmenu a").each(function () {
+    
+    $(".mainmenu .mainmenu-links a").each(function () {
         if (this.href == window.location.href) {
             $(this).parent().addClass("active"); 
             $(this).parent().parent().parent().addClass("active"); 
             $(this).parent().parent().parent().parent().parent().addClass("active"); 
         }
     });
-
-
+    if(window.location.pathname == "/"){
+        $(".mainmenu .mainmenu-links > li:first").addClass("active");
+    }
 
     // Clients Carousel
     $('#owl-clients').owlCarousel({ 

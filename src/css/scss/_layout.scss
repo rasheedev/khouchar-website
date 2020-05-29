@@ -11,6 +11,7 @@
             background-size: cover;
             background-position: center center;
             height: 100vh;
+            min-height: 500px;
         }
         .owl-carousel {
             position: relative;
@@ -45,6 +46,11 @@
                 }
             }
         } 
+    }
+    @media (max-width: 991.98px) {
+        #home .bg-image {
+            height: 550px;
+        }
     }
 
     /* Services */
@@ -95,9 +101,9 @@
             z-index: 2;
         }
         .products-wrap {
-            margin-top: -30px;
+            margin-top: -40px;
             .single-product {
-            margin-top: 30px;
+            margin-top: 40px;
                 h3 {
                     font-size: 14px;
                     text-transform: uppercase;
@@ -251,6 +257,7 @@
             }
         }
         .contact-form {
+            margin-top: 40px;
             h2 {
                 font-size: 24px;
                 text-transform: uppercase;
@@ -292,6 +299,9 @@
                 margin: 17px 0 15px;
             }
         }
+        .sav-content {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -301,7 +311,6 @@
 #a-propos-page {
     margin-top: 70px;
     .bg-image {
-        // position: relative;
         background-size: cover;
         background-position: center center;
         background-image: url("../img/backgrounds/a-propos-bg.jpg"); 
@@ -315,6 +324,9 @@
             .divider {
                 margin: 17px 0 15px;
             }
+        }
+        .a-propos-content {
+            margin-bottom: 50px;
         }
         .owl-carousel {
             position: relative;
@@ -415,15 +427,27 @@
     }
 }
 
+@media (max-width: 991.98px) {
+    #product-page {
+        .product-page-wrap {
+            .product-content {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
 
 /*-------------------------------------------------------*/
 /* Footer
 /*-------------------------------------------------------*/
 .footer {
     .footer-details {
-        padding: 65px 0;
+        padding: 30px 0 65px;
         background-color: #1d1d1d;
+        padding-top: -40px;
         .footer-detail{
+            padding-top: 40px;
             h5 {
                 color: #fff;
                 text-transform: uppercase;
@@ -478,6 +502,19 @@
         }
         p {
             margin: 0;
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .footer {
+        .footer-copyright {
+            ul {
+                text-align: center;
+                margin-top: 15px;
+            }
+            p {
+                text-align: center;
+            }
         }
     }
 }
