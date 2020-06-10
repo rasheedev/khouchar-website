@@ -1,17 +1,26 @@
 /* --------------------------------------------------------------------
 -----------------------------------------------------------------------
-   Template Name : Khouchar Website
+   Site Name : Khouchar
    Author : Pixygen
    Version : 1.0.0
    Created : May 2020
-   File Description : Main JS file of the template
+   File Description : Main JS file
 -----------------------------------------------------------------------
 ---------------------------------------------------------------------*/
+
+/* Preloader */ 
+$(window).on("load", function() {
+    $('#preloader').delay(500).fadeOut('slow');
+    $('.spinner').delay(250).fadeOut();
+    $('body').delay(250).css({
+        'overflow': 'visible'
+    });
+});
+
 
 $(document).ready(function(){
 
     "use strict";
-
 
     // Responsive Navigation Bar
     function mobileMenu() {
@@ -116,7 +125,6 @@ $(document).ready(function(){
         }
     });
 
-
     // Home Carousel
     $("#owl-home").owlCarousel({
         items: 1,
@@ -128,7 +136,6 @@ $(document).ready(function(){
         dots:false,
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
-
 
     // Home Carousel
     $("#owl-a-propos, #owl-product").owlCarousel({
@@ -142,7 +149,6 @@ $(document).ready(function(){
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
 
-
     /* Back to Top */ 
    $(window).on("scroll", function() {
         if($(this).scrollTop() > 700)
@@ -155,16 +161,5 @@ $(document).ready(function(){
             scrollTop: 0
         }, 1000);
     });
-
-
-    /* Preloader */ 
-    $(window).load(function() {
-        $('#preloader').delay(500).fadeOut('slow');
-        $('.spinner').delay(250).fadeOut();
-        $('body').delay(250).css({
-                'overflow': 'visible'
-        });
-    });
-    
 
 });
